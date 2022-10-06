@@ -19,9 +19,11 @@
 ## Compilation & Output
 
 <li> Your code will be compiled this way:
+
 ```
 $ gcc -Wall -Werror -Wextra -pedantic -std=c89 *.c -o monty
 ```
+
 <li> Any output must be printed on stdout
 <li> Any error message must be printed on stderr
 
@@ -72,12 +74,16 @@ julien@ubuntu:~/monty$
 ### The monty program
 
 <li> Usage: <b>monty file</b>
+
 where <b>file</b>  is the path to the file containing Monty byte code
 <li> If the user does not give any file or more than one argument to your program, print the error message <b>USAGE: monty file</b>, followed by a new line, and exit with the status <b>EXIT_FAILURE</b>
 <li> If, for any reason, it’s not possible to open the file, print the error message <b>Error: Can't open file <file></b>, followed by a new line, and exit with the status <b>EXIT_FAILURE</b>
+
 where <b>file</b> is the name of the file
 <li> If the file contains an invalid instruction, print the error message <b>L<line_number>: unknown instruction <opcode></b>, followed by a new line, and exit with the status <b>EXIT_FAILURE</b>
+
 where is the line number where the instruction appears.
+
 Line numbers always start at 1
 <li> The monty program runs the bytecodes line by line and stop if either:
 
