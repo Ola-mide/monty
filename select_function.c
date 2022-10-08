@@ -1,4 +1,4 @@
-#include "main.h"
+#include "monty.h"
 
 /**
  * opcomp - check command in dictionary
